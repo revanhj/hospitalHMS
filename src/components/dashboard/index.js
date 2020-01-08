@@ -1,7 +1,6 @@
 import React from 'react'
-
-export default DashBoard=()=>
+const DashBoard=()=>
 <>
-hello
+dashnoard
 </>
-
+export default DashBoard;
