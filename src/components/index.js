@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
-import {HomePage} from './home-page'
-import {DashBoard} from './dashboard'
+import HomePage from './home-page'
+import DashBoard from './dashboard'
 const Views=()=>
 <BrowserRouter>
 <Switch>

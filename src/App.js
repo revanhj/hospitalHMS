@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import View from './components'
+import Views from './components'
 
 class App extends Component {
   render() {
     return (
-      <View/>
+      <Views/>
     );
   }
 }
