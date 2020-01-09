@@ -2,7 +2,8 @@
   "name": "runner",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "dependencies": {    
+"react-datepicker": "^2.10.1",
     "axios": "^0.19.0",
     "react-router-dom": "^5.1.2",
     "react": "^16.9.0",

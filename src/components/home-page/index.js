@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 import BookMyAppointment from './BookMyAppointment';
 import Login from './Login';
 import Navbar from './Navbar';
@@ -28,12 +28,14 @@ const HomePage=(props)=>
 <BookMyAppointment />
 <Login />
 
-<Route path='/home' exact component={Carosal}/>
+<Switch>
 <Route path='/about' exact component={About} />
 <Route path='/service' exact component={Services} />
 <Route path='/department' exact component={Department} />
 <Route path='/docter' exact component={Doctors} />
 <Route path='/contact' exact component={Contact} />
+<Route path='/*' exact component={Carosal}/>
+</Switch>
 <Footer />
 </React.Fragment>
 export default HomePage

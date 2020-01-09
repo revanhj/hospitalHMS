@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 export default ()=>
@@ -58,20 +60,26 @@ return(<React.Fragment>
   </div>
   <div className="input-group mb-3">
   <select className="form-control bg-transparent border-right-0 border-top-0 " placeholder="Gender" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <option className="bg-success">Gender</option>
-    <option className="bg-success">Male</option>
-    <option className="bg-success">Female</option>
+    <option >Gender</option>
+    <option >Male</option>
+    <option >Female</option>
   </select>
   </div>
   <div className="input-group mb-3">
   <select className="form-control bg-transparent border-right-0 border-top-0" placeholder="Department" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <option className="bg-success">Department</option>
-    <option className="bg-success">Department1</option>
-    <option className="bg-success">Department2</option>
+    <option>Department</option>
+    <option>Department1</option>
+    <option>Department2</option>
   </select>
   </div>
-  <input type="text" className="form-control bg-transparent border-right-0 border-top-0 " id="id1"/>
-  
+  <div className='w-100'>
+   <DatePicker
+        className='form-control w-100 mb-3'
+        style={{width:'100% !important'}}
+        selected={new Date()}
+       
+      />
+  </div>
   <div className="input-group mb-3">
   <textarea className="form-control bg-transparent border-right-0 border-top-0 "  rows="4" placeholder="Problem" value="Problem">
     Problem

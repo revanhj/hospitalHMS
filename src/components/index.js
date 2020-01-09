@@ -6,7 +6,7 @@ const Views=(props)=>
 <BrowserRouter>
 <Switch>
 <Route path='/dashboard' exact component={DashBoard}/>
-<Route path='/:path' exact component={HomePage}/>
+<Route path='/'  component={HomePage}/>
 </Switch>
 </BrowserRouter>
 export default Views;
